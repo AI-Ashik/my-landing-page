@@ -1,0 +1,603 @@
+/* reset and common codes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-white {
+  color: white;
+}
+
+.icon-blue {
+  color: rgb(61, 90, 254);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* reset code ends here  */
+
+.logo {
+  width: 65px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.nav-menu ul li {
+  display: inline;
+  margin: 0 10px;
+  transition: 0.3s all;
+}
+
+.nav-menu ul li a {
+  color: rgb(160, 160, 160);
+  text-decoration: none;
+  font-weight: bolder;
+  transition: 0.3s all;
+  font-size: 1.2rem;
+}
+
+.nav-menu ul li a:hover {
+  color: white;
+}
+
+/* main starts here  */
+
+.main-starting {
+  padding: 25px;
+  text-align: center;
+  margin: 0 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading-1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+}
+
+.main-desc-1 {
+  margin: 30px 0;
+}
+
+.main-btn {
+  border: none;
+  padding: 10px;
+  background-color: rgb(70, 94, 230);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+}
+
+.main-btn-div {
+  margin: 20px 0;
+}
+
+.main-btn:hover {
+  background-color: rgb(23, 58, 254);
+}
+
+.main-motto {
+  text-align: center;
+  margin: 60px 0;
+  padding: 25px;
+}
+
+.main-motto-heading {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.main-motto-desc p {
+  color: rgb(207, 216, 220);
+  padding: 30px;
+}
+
+.main-card .cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+  text-align: center;
+  padding: 0 200px;
+  margin: 20px 0;
+}
+
+.card {
+  margin: 20px 30px;
+}
+
+.card-icon {
+  background-color: rgb(22, 26, 50);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 30px;
+}
+
+.card-icon i {
+  color: rgb(61, 90, 254);
+}
+
+.card-heading {
+  margin: 20px 0;
+}
+
+.card-desc p {
+  color: rgb(120, 110, 110);
+}
+
+.hero-btn {
+  border: none;
+  padding: 10px 24px;
+  background-color: rgb(70, 94, 230);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+}
+
+.hero-btn-div {
+  margin: 30px 0;
+}
+
+.hero-btn:hover {
+  background-color: rgb(23, 58, 254);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+  align-items: center;
+}
+
+.hero-heading {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.hero-data {
+  width: 50%;
+}
+.hero-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img img {
+  border-radius: 5px;
+  width: 450px;
+}
+.main-pricing-title {
+  text-align: center;
+}
+
+.price-heading {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.pricing-title-section {
+  margin: 40px 0;
+}
+
+.price-desc p {
+  font-size: 20px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 20px 80px;
+}
+
+.pricing-card {
+  background-color: rgb(38, 50, 56);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 3px;
+}
+
+.pricing-card .pricing-info ul li {
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricing-heading {
+  margin: 20px 0;
+}
+
+.pricing-heading h3 {
+  font-size: 1.75rem;
+}
+
+.pricing-price {
+  margin-bottom: 30px;
+}
+
+.pricing-price h2 {
+  color: rgb(61, 90, 254);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.pricing-btn-div {
+  margin: 30px 0;
+}
+
+.pricing-btn-div .pricing-btn {
+  border: none;
+  padding: 10px 24px;
+  background-color: rgb(70, 94, 230);
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+  transition: 0.3s all;
+  box-shadow: 0 3px 5px rgb(51, 65, 145);
+}
+
+.pricing-btn-div .pricing-btn:hover {
+  background-color: rgb(23, 58, 254);
+  box-shadow: 0 5px 12px rgb(51, 65, 145);
+  color: white;
+}
+
+.services {
+  margin: 80px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-data {
+  width: 40%;
+}
+
+.services-items {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+  text-align: left;
+}
+
+.services-info {
+  width: 50%;
+}
+
+.services-icons {
+  margin: 0 5px;
+}
+
+.services-heading-div {
+  margin: 0 0 10px 0;
+}
+
+.create-account {
+  margin: 50px 80px;
+  text-align: center;
+}
+
+.create-account-heading {
+  margin: 20px 0;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+.create-account-desc {
+  margin: 20px 200px;
+}
+
+.create-account-btn-div {
+  margin: 20px 0;
+}
+
+.create-account-btn {
+  border: none;
+  padding: 10px 24px;
+  background-color: rgb(70, 94, 230);
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+  transition: 0.3s all;
+  box-shadow: 0 3px 5px rgb(23, 58, 254);
+}
+
+.create-account-btn:hover {
+  background-color: rgb(23, 58, 254);
+  box-shadow: 0 5px 12px rgb(51, 65, 145);
+  color: white;
+}
+
+.faqs-title {
+  text-align: center;
+  margin: 50px 80px;
+}
+
+.faqs-title-heading {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.faqs-title-desc {
+  font-size: 1.2rem;
+  color: rgb(120, 144, 156);
+}
+
+.faqs {
+  margin: 50px 180px;
+}
+
+.faqs-questions {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+  text-align: left;
+}
+
+.faqs-q-heading {
+  margin: 20px 0;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.faqs-q-desc {
+  color: rgb(120, 144, 156);
+}
+
+.questions-area {
+  margin: 50px 80px;
+  text-align: center;
+}
+
+.questions-area-heading {
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.questions-area-btn {
+  border: none;
+  padding: 13px 24px;
+  background-color: rgb(70, 94, 230);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+  transition: 0.3s all;
+}
+
+.questions-area-btn:hover {
+  background-color: rgb(23, 58, 254);
+
+  color: white;
+}
+
+.news-update {
+  text-align: center;
+  margin: 60px 80px;
+}
+
+.news-update-heading {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.news-update-desc {
+  font-size: 1.2rem;
+  color: rgb(120, 144, 156);
+}
+
+.news {
+  margin: 50px 80px;
+}
+
+.news-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1.5rem;
+  max-height: 100%;
+}
+
+.news-card-date {
+  margin: 10px 0;
+  color: rgb(120, 144, 156);
+}
+
+.news-card-desc {
+  margin: 20px 0;
+  color: rgb(207, 216, 220);
+}
+
+.news-card-heading {
+  margin: 20px 0;
+}
+
+.news-card {
+  background-color: rgb(38, 50, 56);
+  border-radius: 5px;
+}
+
+.news-card-body {
+  padding: 0 18px 0 18px;
+}
+
+.news-img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.news-card-link {
+  text-decoration: none;
+  color: rgb(0, 92, 245);
+}
+
+.news-card-link:hover {
+  color: rgb(25, 65, 185);
+}
+
+.news-card-btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(70, 94, 230);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3 all;
+  font-weight: 600;
+}
+
+.news-card-btn-div {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.news-card-btn:hover {
+  background-color: rgb(23, 58, 254);
+}
+
+.news-section {
+  background-color: rgb(17, 23, 26);
+  padding: 50px 0;
+}
+
+/* main ends here  */
+
+/* footer starts here  */
+footer {
+  margin: 80px 80px;
+}
+
+.footer-info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-details {
+  width: 40%;
+}
+
+.footer-menu {
+  width: 45%;
+}
+
+.footer-menu-items {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+}
+
+.footer-menu-items ul li {
+  margin: 15px 0;
+}
+
+.footer-menu-items ul li a {
+  color: rgb(149, 169, 190);
+  transition: 0.3s all;
+}
+
+.footer-menu-items ul li h2 {
+  font-size: 0.95rem;
+}
+
+.footer-menu-items ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-details-heading {
+  font-size: 0.95rem;
+  margin: 15px 0;
+}
+
+.footer-details-desc {
+  margin: 15px 0;
+  font-size: 14px;
+  color: rgb(73, 126, 156);
+}
+
+.footer-social-icons ul li a {
+  margin: 5px 5px;
+  color: rgb(79, 97, 199);
+}
+
+.footer-social-icons ul li a:hover {
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* footer ends here  */
